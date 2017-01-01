@@ -1,7 +1,7 @@
 Dockerized http://mediagoblin.org/
 ==================================
 
-[Fork of Loic Dacharys Container](https://notabug.org/dachary/mediagoblin-docker)
+[Fork of Loic Dacharys Container](https://notabug.org/dachary/mediagoblin-docker) - adds RAW image support + multi file upload
 
 The default user is admin, password admin.
 
