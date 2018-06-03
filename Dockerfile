@@ -69,7 +69,7 @@ RUN cd /srv/mediagoblin.example.org/mediagoblin && echo '[[mediagoblin.media_typ
 #
 RUN cd /srv/mediagoblin.example.org/mediagoblin/mediagoblin/plugins && git clone https://github.com/VenKamikaze/mediagoblin-html5-multi-upload.git html5-multi-upload
 RUN cd /srv/mediagoblin.example.org/mediagoblin && echo '[[mediagoblin.plugins.html5-multi-upload]]' | sudo -u mediagoblin tee -a mediagoblin_local.ini
-#RUN sed -i "s/'\/submit\/'/'\/html5-multi-upload\/'/" /srv/mediagoblin.example.org/mediagoblin/mediagoblin/submit/routing.py
+RUN sed -i "s/'\/submit\/'/'\/html5-multi-upload\/'/" /srv/mediagoblin.example.org/mediagoblin/mediagoblin/submit/routing.py
 #
 #
 #
